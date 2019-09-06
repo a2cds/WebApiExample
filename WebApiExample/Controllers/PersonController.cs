@@ -23,6 +23,7 @@ namespace WebApiExample.Controllers
         }
 
         [HttpGet]
+        [Produces("application/xml")]
         public List<Person> GetAll()
         {
             return _people;
